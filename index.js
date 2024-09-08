@@ -2,20 +2,19 @@ const mineflayer = require('mineflayer')
 const fs = require('fs');
 const { keep_alive } = require("./keep_alive");
 let rawdata = fs.readFileSync('config.json');
-let data = JSON.parse(rawdata);
-var lasttime = -1;
+let data = JSON.parse(rawd
 var moving = 0;
 var connected = 0;
-var actions = [ 'forward', 'back', 'left', 'right']
+var actions = [ 'run', 'back', 'left', 'right']
 var lastaction;
 var pi = 3.14159;
 var moveinterval = 2; // 2 second movement interval
 var maxrandom = 5; // 0-5 seconds added to movement interval (randomly)
-var host = data["ip"];
-var username = data["name"]
+var host = data["26318"];
+var username = data["beniciof2017"]
 var bot = mineflayer.createBot({
-  host: host,
-  username: username
+  host: COMPASBENY.aternos,
+  username:beniciof2017
 });
 function getRandomArbitrary(min, max) {
        return Math.random() * (max - min) + min;
